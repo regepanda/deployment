@@ -1,0 +1,54 @@
+<div class="row" data-spy="scroll" data-target="#nav-affix">
+    <div class="col-md-3">
+        <div class="panel panel-default affix" data-spy="affix" id="nav-affix" data-offset-top="70" data-offset-bottom="200">
+            <div class="panel-heading">
+                <h4>Projects</h4>
+            </div>
+            <div class="panel-body">
+                <ul class="nav">
+                    {{ range $owner, $groups := . }}
+                    <li class="active"><a data-owner="{{ $owner }}">{{ $owner }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        {{ range $owner, $groups := . }}
+        <div class="owner-block" id="block-{{ $owner }}">
+            <h2 id="nav-{{ $owner }}" class="page-header">{{ $owner }}</h2>
+            {{ range $group, $projects := $groups }}
+                <h3 id="nav-{{ $owner }}-{{ $group }}" class="page-header">{{ $group }}</h3>
+                <div class="row">
+                    {{ range $_, $project := $projects }}
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">{{ $project.Name }}</div>
+                                <div class="panel-body">
+                                    <p>
+                                        {{ $project.Domain }}
+                                    </p>
+                                    <p>
+                                    <a href="{{ $project.Domain }}" class="btn btn-default" target="_blank">View</a>
+                                    <a href="/project?owner={{ $owner }}&group={{ $group }}&code={{ $project.Code }}" class="btn btn-primary">Deploy</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+(function($){
+    $('li.active a').click(function(){
+        var o = $(this).attr('data-owner');
+        $('div.owner-block').hide();
+        $('#block-'+o).fadeIn(200);
+    });
+})($);
+</script>

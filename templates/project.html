@@ -1,0 +1,256 @@
+<link href="/css/select2.min.css" rel="stylesheet" />
+<h1>{{ .Project.Name }}</h1>
+<ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#nav-{{ .Project.Owner }}">{{ .Project.Owner }}</a></li>
+    <li><a href="/#nav-{{ .Project.Owner }}-{{ .Project.Group }}">{{ .Project.Group }}</a></li>
+    <li class="active">{{ .Project.Name }}</li>
+</ol>
+<div class="row">
+    <div id="alerts" class="col-md-12"></div>
+</div>
+<form class="form-horizontal" method="post">
+    <div class="row">
+        {{ range $repo, $_ := .Project.Repositories }}
+        <div class="col-md-6 repo" data-repo="{{ $repo }}">
+            <div class="panel panel-default">
+                <div class="panel-heading">{{ $repo }}</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="repo-{{ $repo }}" class="col-md-2 control-label">Branches</label>
+                        <div class="col-md-10">
+                            <input type="hidden" name="repository" value="{{ $repo }}">
+                            <select id="repo-{{ $repo }}" data-repo="{{ $repo }}" name="branch" class="form-control branch-selector">
+                                <option value="">-- select branch --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="repo-{{ $repo }}-revision" class="col-md-2 control-label">Revisions</label>
+                        <div class="col-md-10">
+                            <select id="repo-{{ $repo }}-revision" name="revision" class="form-control">
+                                <option value="">-- select revision --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="repo-workorder-revision" class="col-md-2 control-label"></label>
+                        <div class="col-md-8">
+                            <input class="form-control manual-revision-input">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-info manual-revision-btn">Use</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <hr>
+    <div class="text-right">
+        <input type="button" class="btn btn-primary" disabled="disabled" id="deploy-button" value="Deploy">
+    </div>
+</form>
+<script type="text/javascript">
+    var selectedBranch = {}
+</script>
+<div class="row">
+    <div class="col-md-12">
+        <fieldset>
+            <legend>Operation Logs</legend>
+            <ul class="nav">
+                {{ range $key, $log := .Records }}
+                    {{ range $repo_name, $repo := $log.Repositories|decode_repositories }}
+                        <li><p>
+                            [{{ $log.Created }}] [{{ $log.DisplayName }}] [{{ $repo_name }}]
+                            {{ if ne $repo.Branch "" }}
+                            [{{ $repo.Branch }}]
+                            {{ end }}
+                            {{ if eq $log.IsSuccessful 1 }}
+                            <span class="label label-success label-sm">success</span>
+                            {{ else }}
+                            <a class="label label-danger" href="###" data-toggle="modal" data-target="#fail-message-{{ $log.Id }}-{{ $repo_name }}">fail</a>
+                            {{ end }}
+                            {{ $repo.Revision }} {{ $repo.Message }}
+                        </p></li>
+                        {{ if ne $log.IsSuccessful 1 }}
+                        <div class="modal fade" id="fail-message-{{ $log.Id }}-{{ $repo_name }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">deploy message</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        {{ $log.DeployMessage }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ if eq $key 0 }}
+                        <script type="text/javascript">
+                            selectedBranch[{{ $repo_name}}] = {{ $repo.Branch }};
+                        </script>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </fieldset>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script src="/js/select2.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(document).ajaxError(function (event, request) {
+            if (request.status == 500) {
+                if (request.responseJSON) {
+                    showAlert('warning', 'server error', request.responseJSON.message);
+                } else {
+                    showAlert('warning', 'server error', 'request deployment service failed.');
+                }
+            } else if (request.status == 400) {
+                showAlert('warning', '', 'bad request.');
+            } else if (request.status == 404) {
+                showAlert('warning', 'project not found', 'project not found on deployment service.');
+            } else if (request.status == 403) {
+                // redirect
+            }
+        });
+        {{ range $repo, $_ := .Project.Repositories }}
+            fetchBranches('{{ $repo }}');
+        {{ end }}
+
+        $('.branch-selector').select2();
+        $('.branch-selector').change(function () {
+            var repo = $(this).data('repo');
+            branch = $(this).val();
+            fetchRevisions(repo, branch);
+        });
+
+        $('.manual-revision-btn').click(function(){
+            var url = "/loadRevision?code={{ .Project.Code }}&owner={{ .Project.Owner }}&group={{ .Project.Group }}";
+            var panel = $(this).parents('.panel');
+            var revision = panel.find('.manual-revision-input').val();
+            var repo = panel.find('input[name=repository]').val();
+            var branch = panel.find('select[name=branch]').val();
+            url += "&revision=" + revision;
+            url += "&repo=" + repo;
+            url += "&branch=" + branch;
+
+            $.get(url, function(res){
+                if (!res.code || res.code != 1) {
+                    showAlert("check revision error");
+                    return;
+                }
+                if (panel.find('select[name=revision]').find('option[value=' + res.log.revision + ']').length == 0) {
+                    panel.find('select[name=revision]').append('<option value="'+ res.log.revision +'">' + res.log.revision + " " + res.log.message +'</option>');
+                }
+                panel.find('select[name=revision]').val(res.log.revision);
+            }, "json");
+        });
+
+        $('body').on('click', '#deploy-button:enabled', function () {
+            var params = {owner: '{{ .Project.Owner }}', group: '{{ .Project.Group }}', code: '{{ .Project.Code }}'}
+            var has_error = false;
+            var repos = [];
+            $.each($('.repo'), function (k, repo) {
+                if (has_error) {
+                    return
+                }
+                repo = $(repo);
+                revision = repo.find('select[name="revision"]').val();
+                if (!revision) {
+                    has_error = true;
+                    showAlert('warning', 'deploy failed', 'please select revision to deploy');
+                    return;
+                }
+                repos.push([
+                    repo.data('repo'),
+                    repo.find('select[name="revision"]').val(),
+                    repo.find('select[name="branch"]').val(),
+                ].join(":"));
+            });
+            if (!has_error) {
+                params.repos = repos
+                $.post('/deploy', params, function(data) {
+                    if (data.code == 1) {
+                        showAlert('success', 'deploy success', 'deploy task is on progress now');
+                    } else {
+                        showAlert('warning', 'deploy failed', data.message)
+                    }
+                }, 'json');
+            }
+        });
+    });
+
+    var deploy_button = $('#deploy-button');
+
+    function fetchBranches(repo) {
+        var alertBody = showAlert('info', 'updating repositories', '');
+        deploy_button.attr('disabled', 'disabled');
+        var params = {owner: '{{ .Project.Owner }}', group: '{{ .Project.Group }}', code: '{{ .Project.Code }}', repo: repo}
+        var select = $('#repo-' + repo);
+        $.get('/branch', params, function (data) {
+            if (data.code == 1) {
+                select.find('option').remove();
+                $.each(data.branches, function (key, branch) {
+                    select.append('<option value="'+ branch +'">'+branch+'</option>');
+                });
+                alertBody.slideUp("slow", function () {
+                    alertBody.remove();
+                });
+                deploy_button.removeAttr('disabled');
+                if (selectedBranch[repo]) {
+                    select.val(selectedBranch[repo]);
+                    if (select.val() != selectedBranch[repo]) {
+                        select.val('master');
+                    }
+                }
+                select.trigger('change')
+            } else {
+                showAlert('warning', 'update repo failed', data.message);
+            }
+        }, 'json');
+    }
+
+    function fetchRevisions(repo, branch) {
+        deploy_button.attr('disabled', 'disabled');
+        var params = {owner: '{{ .Project.Owner }}', group: '{{ .Project.Group }}', code: '{{ .Project.Code }}', repo: repo, branch: branch}
+        $.get('/revision', params, function (data) {
+            if (data.code == 1) {
+                var select = $('#repo-' + repo + '-revision');
+                select.find('option').remove();
+                $.each(data.logs, function (key, log) {
+                    select.append('<option value="' + log.revision + '">' + log.revision + ': ' + log.message + '</option>')
+                });
+                deploy_button.removeAttr('disabled');
+            } else {
+                showAlert('warning', 'fetch revision failed', data.message);
+            }
+        }, 'json');
+    }
+
+    function showAlert(level, title, message) {
+        var body = $('<div class="alert alert-dismissible" role="alert">\
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>\
+        <strong></strong>\
+        </div>');
+        body.addClass('alert-'+level);
+        body.find('strong').text(title);
+        body.hide();
+        body.append(message);
+        var siblings = $('#alerts .alert');
+        $('#alerts').append(body);
+        body.slideDown("slow", function () {
+            siblings.slideUp("slow", function () {
+                siblings.remove();
+            });
+        });
+        return body;
+    }
+</script>

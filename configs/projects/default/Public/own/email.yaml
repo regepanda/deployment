@@ -1,0 +1,15 @@
+---
+domain: "http://www.email.cn"
+name: "email"
+servers:
+    -
+        host: "localhost"
+        is_local: true
+        owner: "root:root"
+        command: "ls"
+repositories:
+    yiimodel:
+        path: "/tmp/deployment/repos/laravel_email"
+        deploy_path: "/tmp/deployment/webroot/laravel_email"
+        command: "composer install && cp .env.example .env && php artisan key:generate && chmod -R 777 storage/"
+   

@@ -1,0 +1,19 @@
+---
+domain: "http://www.qa1.tff.com"
+name: "yiifrontend"
+servers:
+    -
+        host: "localhost"
+        is_local: true
+        owner: "apache:apache"
+        command: "ls"
+repositories:
+    yiimodel:
+        path: "/opt/repos/qa/yiimodel"
+        deploy_path: "/opt/app/nginx/html/qa1/frontend/yiimodel"
+        command: "sed -i 's/hotel.services.tff.com/hotel.services.qa1.tff.com/g'  extensions/services/config/main.php && composer install && goconfenv-manager -e qa1 -c cem.conf -p default -h cem.services.qa1.tff.com"
+    yiifrontend:
+        path: "/opt/repos/qa/yiifrontendtff"
+        deploy_path: "/opt/app/nginx/html/qa1/frontend/yiifrontendtff"
+        command: "goconfenv-manager -e qa1 -c cem.conf -p default -h cem.services.qa1.tff.com && sed -i 's/\\/\\/@@UNCOMMENT@@//g' index.php"
+

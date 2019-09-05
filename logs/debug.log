@@ -1,0 +1,603 @@
+2017/09/25 15:19:50 open configs/projects/default/Public/tff/front.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/tff/admin.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/tff/provider.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/t4f/front.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/t4f/admin.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/t4f/provider.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/erp/terp.yaml: no such file or directory
+2017/09/25 15:19:50 open configs/projects/default/Public/erp/trest.yaml: no such file or directory
+2017/09/25 15:19:50 http server started
+2017/09/25 15:19:50 syncer started
+2017/09/25 15:20:54 open configs/projects/default/Public/tff/front.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/tff/admin.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/tff/provider.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/t4f/front.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/t4f/admin.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/t4f/provider.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/erp/terp.yaml: no such file or directory
+2017/09/25 15:20:54 open configs/projects/default/Public/erp/trest.yaml: no such file or directory
+2017/09/25 15:20:54 http server started
+2017/09/25 15:20:54 syncer started
+2017/09/25 15:25:00 open configs/projects/default/Public/tff/front.yaml: no such file or directory
+2017/09/25 15:25:00 open configs/projects/default/Public/tff/admin.yaml: no such file or directory
+2017/09/25 15:25:00 open configs/projects/default/Public/tff/provider.yaml: no such file or directory
+2017/09/25 15:25:00 http server started
+2017/09/25 15:25:00 syncer started
+2017/09/25 15:35:41 open configs/projects/default/Public/tff/front.yaml: no such file or directory
+2017/09/25 15:35:41 http server started
+2017/09/25 15:35:41 syncer started
+2017/09/25 15:39:00 http server started
+2017/09/25 15:39:00 syncer started
+2017/09/25 15:39:05 http server started
+2017/09/25 15:39:05 syncer started
+2017/09/25 15:46:13 http server started
+2017/09/25 15:46:13 syncer started
+2017/09/25 15:51:12 http server started
+2017/09/25 15:51:12 syncer started
+2017/09/25 15:53:53 http server started
+2017/09/25 15:53:53 syncer started
+2017/09/25 15:58:16 http server started
+2017/09/25 15:58:16 syncer started
+2017/09/25 16:01:02 http server started
+2017/09/25 16:01:02 syncer started
+2017/09/25 16:03:07 http server started
+2017/09/25 16:03:07 syncer started
+2017/09/25 16:11:09 http server started
+2017/09/25 16:19:23 http server started
+2017/09/25 16:19:23 syncer started
+2017/09/25 16:20:56 http server started
+2017/09/25 16:20:56 syncer started
+2017/09/25 16:21:06 http server started
+2017/09/25 16:21:06 syncer started
+2017/09/25 16:26:11 http server started
+2017/09/25 16:26:11 syncer started
+2017/09/25 16:32:58 http server started
+2017/09/25 16:32:58 syncer started
+2017/09/25 16:33:34 http server started
+2017/09/25 16:33:34 syncer started
+2017/09/25 16:42:09 open configs/projects/default/Public/own/email.yaml: no such file or directory
+2017/09/25 16:42:09 http server started
+2017/09/25 16:42:09 syncer started
+2017/09/25 16:47:03 open configs/projects/default/Public/own/email.yaml: no such file or directory
+2017/09/25 16:47:03 http server started
+2017/09/25 16:47:03 syncer started
+2017/09/25 16:49:09 http server started
+2017/09/25 16:49:09 syncer started
+2017/09/25 17:00:53 http server started
+2017/09/25 17:00:53 syncer started
+2017/09/25 17:01:54 start sync project: Public-own-email
+2017/09/25 17:01:54 start checkout to 2fae6b8 in /opt/repos/qa/laravel_email
+2017/09/25 17:01:54 finish checkout to 2fae6b8 in /opt/repos/qa/laravel_email
+2017/09/25 17:01:54 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:01:55 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:01:55 execute command before push failed: bash: composer: command not found
+
+2017/09/25 17:01:55 some error occured, pause deploy
+2017/09/25 17:08:32 http server started
+2017/09/25 17:08:32 syncer started
+2017/09/25 17:08:41 start sync project: Public-own-email
+2017/09/25 17:08:41 Public-own-email latest deploy failed, remove all the codes.
+2017/09/25 17:08:42 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:08:42 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:08:42 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:08:42 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:09:00 execute command before push failed: Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 56 installs, 0 updates, 0 removals
+  - Installing jakub-onderka/php-console-color (0.1): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing vlucas/phpdotenv (v2.4.0): Downloading (connecting...)Downloading (0%)           Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/polyfill-mbstring (v1.5.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/var-dumper (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (25%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/translation (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (25%)Downloading (50%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/routing (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (25%)Downloading (80%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/process (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (55%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/polyfill-util (v1.5.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/polyfill-php56 (v1.5.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/http-foundation (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (25%)Downloading (30%)Downloading (55%)Downloading (85%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/event-dispatcher (v3.3.9): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing psr/log (1.0.2): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/debug (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (70%)Downloading (85%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/http-kernel (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (15%)Downloading (40%)Downloading (55%)Downloading (70%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/finder (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (15%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/console (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (25%)Downloading (35%)Downloading (50%)Downloading (60%)Downloading (75%)Downloading (85%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing swiftmailer/swiftmailer (v5.4.8): Downloading (connecting...)Downloading (0%)           Downloading (5%)Downloading (10%)Downloading (35%)Downloading (40%)Downloading (45%)Downloading (50%)Downloading (55%)Downloading (80%)Downloading (85%)Downloading (90%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing nikic/php-parser (v2.1.1): Downloading (connecting...)Downloading (0%)           Downloading (5%)Downloading (10%)Downloading (15%)Downloading (20%)Downloading (25%)Downloading (30%)Downloading (35%)Downloading (40%)Downloading (45%)Downloading (50%)Downloading (55%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing jakub-onderka/php-console-highlighter (v0.3.2): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing dnoegel/php-xdg-base-dir (0.1): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing psy/psysh (v0.7.2): Downloading (connecting...)Downloading (0%)           Downloading (20%)Downloading (35%)Downloading (55%)Downloading (75%)Downloading (90%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing paragonie/random_compat (v1.4.2): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing nesbot/carbon (1.22.1): Downloading (connecting...)Downloading (0%)           Downloading (15%)Downloading (30%)Downloading (45%)Downloading (60%)Downloading (75%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing mtdowling/cron-expression (v1.2.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing monolog/monolog (1.23.0): Downloading (connecting...)Downloading (0%)           Downloading (10%)Downloading (20%)Downloading (75%)Downloading (85%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing league/flysystem (1.0.41): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing jeremeamia/superclosure (2.3.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing doctrine/inflector (v1.1.0): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing classpreloader/classpreloader (3.1.0): Downloading (connecting...)Downloading (0%)           Downloading (55%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing laravel/framework (v5.2.45): Downloading (connecting...)Downloading (0%)           Downloading (5%)Downloading (10%)Downloading (15%)Downloading (20%)Downloading (25%)Downloading (30%)Downloading (35%)Downloading (40%)Downloading (45%)Downloading (50%)Downloading (55%)Downloading (60%)Downloading (65%)Downloading (70%)Downloading (75%)Downloading (80%)Downloading (85%)Downloading (90%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing fzaninotto/faker (v1.7.1): Downloading (connecting...)Downloading (0%)           Downloading (5%)Downloading (10%)Downloading (15%)Downloading (20%)Downloading (25%)Downloading (30%)Downloading (35%)Downloading (40%)Downloading (45%)Downloading (50%)Downloading (55%)Downloading (60%)Downloading (65%)Downloading (70%)Downloading (75%)Downloading (80%)Downloading (85%)Downloading (90%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing hamcrest/hamcrest-php (v1.2.2): Downloading (connecting...)Downloading (0%)           Downloading (50%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing mockery/mockery (0.9.9): Downloading (connecting...)Downloading (0%)           Downloading (5%)Downloading (65%)Downloading (70%)Downloading (75%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing webmozart/assert (1.2.0): Downloading (connecting...)Downloading (0%)           Downloading (55%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpdocumentor/reflection-common (1.0.1): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpdocumentor/type-resolver (0.3.0): Downloading (connecting...)Downloading (0%)           Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpdocumentor/reflection-docblock (3.2.2): Downloading (connecting...)Downloading (0%)           Downloading (80%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/php-token-stream (1.4.11): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/yaml (v3.3.9): Downloading (connecting...)Downloading (0%)           Downloading (10%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/version (1.0.6): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/global-state (1.1.1): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/recursion-context (1.0.5): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/exporter (1.2.2): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/environment (1.3.8): Downloading (connecting...)Downloading (0%)           Downloading (90%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/diff (1.4.3): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing sebastian/comparator (1.2.4): Downloading (connecting...)Downloading (0%)           Downloading (20%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/php-text-template (1.2.1): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing doctrine/instantiator (1.0.5): Downloading (connecting...)Downloading (0%)           Downloading (45%)Downloading (90%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/phpunit-mock-objects (2.3.8): Downloading (connecting...)Downloading (0%)           Downloading (55%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/php-timer (1.0.9): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/php-file-iterator (1.4.2): Downloading (connecting...)Downloading (0%)           Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/php-code-coverage (2.2.4): Downloading (connecting...)Downloading (0%)           Downloading (15%)Downloading (25%)Downloading (40%)Downloading (55%)Downloading (65%)Downloading (80%)Downloading (90%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpspec/prophecy (v1.7.2): Downloading (connecting...)Downloading (0%)           Downloading (35%)Downloading (70%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing phpunit/phpunit (4.8.36): Downloading (connecting...)Downloading (0%)           Downloading (10%)Downloading (20%)Downloading (30%)Downloading (45%)Downloading (55%)Downloading (65%)Downloading (75%)Downloading (85%)Downloading (95%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/css-selector (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (10%)Downloading (20%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+  - Installing symfony/dom-crawler (v3.0.9): Downloading (connecting...)Downloading (0%)           Downloading (90%)Downloading (100%)
+    The Process class relies on proc_open, which is not available on your PHP installation.
+    The archive may contain identical file names with different capitalization (which fails on case insensitive filesystems)
+    Unzip with unzip command failed, falling back to ZipArchive class
+symfony/var-dumper suggests installing ext-symfony_debug ()
+symfony/translation suggests installing symfony/config ()
+symfony/routing suggests installing doctrine/annotations (For using the annotation loader)
+symfony/routing suggests installing symfony/config (For using the all-in-one router or any loader)
+symfony/routing suggests installing symfony/dependency-injection (For loading routes from a service)
+symfony/routing suggests installing symfony/expression-language (For using expression matching)
+symfony/event-dispatcher suggests installing symfony/dependency-injection ()
+symfony/http-kernel suggests installing symfony/browser-kit ()
+symfony/http-kernel suggests installing symfony/class-loader ()
+symfony/http-kernel suggests installing symfony/config ()
+symfony/http-kernel suggests installing symfony/dependency-injection ()
+psy/psysh suggests installing ext-pdo-sqlite (The doc command requires SQLite to work.)
+psy/psysh suggests installing ext-readline (Enables support for arrow-key history navigation, and showing and manipulating command history.)
+paragonie/random_compat suggests installing ext-libsodium (Provides a modern crypto API that can be used to generate random bytes.)
+monolog/monolog suggests installing aws/aws-sdk-php (Allow sending log messages to AWS services like DynamoDB)
+monolog/monolog suggests installing doctrine/couchdb (Allow sending log messages to a CouchDB server)
+monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
+monolog/monolog suggests installing ext-mongo (Allow sending log messages to a MongoDB server)
+monolog/monolog suggests installing graylog2/gelf-php (Allow sending log messages to a GrayLog2 server)
+monolog/monolog suggests installing mongodb/mongodb (Allow sending log messages to a MongoDB server via PHP Driver)
+monolog/monolog suggests installing php-amqplib/php-amqplib (Allow sending log messages to an AMQP server using php-amqplib)
+monolog/monolog suggests installing php-console/php-console (Allow sending log messages to Google Chrome)
+monolog/monolog suggests installing rollbar/rollbar (Allow sending log messages to Rollbar)
+monolog/monolog suggests installing ruflin/elastica (Allow sending log messages to an Elastic Search server)
+monolog/monolog suggests installing sentry/sentry (Allow sending log messages to a Sentry server)
+league/flysystem suggests installing ext-fileinfo (Required for MimeType)
+league/flysystem suggests installing league/flysystem-aws-s3-v2 (Allows you to use S3 storage with AWS SDK v2)
+league/flysystem suggests installing league/flysystem-aws-s3-v3 (Allows you to use S3 storage with AWS SDK v3)
+league/flysystem suggests installing league/flysystem-azure (Allows you to use Windows Azure Blob storage)
+league/flysystem suggests installing league/flysystem-cached-adapter (Flysystem adapter decorator for metadata caching)
+league/flysystem suggests installing league/flysystem-eventable-filesystem (Allows you to use EventableFilesystem)
+league/flysystem suggests installing league/flysystem-rackspace (Allows you to use Rackspace Cloud Files)
+league/flysystem suggests installing league/flysystem-sftp (Allows you to use SFTP server storage via phpseclib)
+league/flysystem suggests installing league/flysystem-webdav (Allows you to use WebDAV storage)
+league/flysystem suggests installing league/flysystem-ziparchive (Allows you to use ZipArchive adapter)
+league/flysystem suggests installing spatie/flysystem-dropbox (Allows you to use Dropbox storage)
+league/flysystem suggests installing srmklive/flysystem-dropbox-v2 (Allows you to use Dropbox storage for PHP 5 applications)
+laravel/framework suggests installing aws/aws-sdk-php (Required to use the SQS queue driver and SES mail driver (~3.0).)
+laravel/framework suggests installing doctrine/dbal (Required to rename columns and drop SQLite columns (~2.4).)
+laravel/framework suggests installing guzzlehttp/guzzle (Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).)
+laravel/framework suggests installing league/flysystem-aws-s3-v3 (Required to use the Flysystem S3 driver (~1.0).)
+laravel/framework suggests installing league/flysystem-rackspace (Required to use the Flysystem Rackspace driver (~1.0).)
+laravel/framework suggests installing pda/pheanstalk (Required to use the beanstalk queue driver (~3.0).)
+laravel/framework suggests installing predis/predis (Required to use the redis cache and queue drivers (~1.0).)
+laravel/framework suggests installing pusher/pusher-php-server (Required to use the Pusher broadcast driver (~2.0).)
+laravel/framework suggests installing symfony/psr-http-message-bridge (Required to use psr7 bridging features (0.2.*).)
+sebastian/global-state suggests installing ext-uopz (*)
+phpunit/php-code-coverage suggests installing ext-xdebug (>=2.2.1)
+phpunit/phpunit suggests installing phpunit/php-invoker (~1.1)
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postInstall
+> php artisan optimize
+
+                                                                                           
+  [Symfony\Component\Process\Exception\RuntimeException]                                   
+  The Process class relies on proc_open, which is not available on your PHP installation.  
+                                                                                           
+
+install [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--no-custom-installers] [--no-autoloader] [--no-scripts] [--no-progress] [--no-suggest] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--ignore-platform-reqs] [--] [<packages>]...
+
+
+2017/09/25 17:09:00 some error occured, pause deploy
+2017/09/25 17:11:19 http server started
+2017/09/25 17:11:19 syncer started
+2017/09/25 17:11:32 start sync project: Public-own-email
+2017/09/25 17:11:33 Public-own-email latest deploy failed, remove all the codes.
+2017/09/25 17:11:33 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:11:33 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:11:33 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:11:33 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:11:49 finish execute command before push
+2017/09/25 17:11:49 finish sync project: Public-own-email, start push
+2017/09/25 17:11:49 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:11:51 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:11:51 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:11:51 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:11:51 finish push project: Public-own-email, start execute command
+2017/09/25 17:11:51 finish execute command after push on server: localhost
+2017/09/25 17:11:51 all servers command executed
+2017/09/25 17:11:51 deploy finished, enjoy :)
+2017/09/25 17:14:40 http server started
+2017/09/25 17:14:40 syncer started
+2017/09/25 17:15:19 http server started
+2017/09/25 17:15:19 syncer started
+2017/09/25 17:15:41 http server started
+2017/09/25 17:15:41 syncer started
+2017/09/25 17:20:42 http server started
+2017/09/25 17:21:01 http server started
+2017/09/25 17:21:01 syncer started
+2017/09/25 17:21:12 start sync project: Public-own-email
+2017/09/25 17:21:12 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:21:12 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:21:12 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:21:12 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:21:24 finish execute command before push
+2017/09/25 17:21:24 finish sync project: Public-own-email, start push
+2017/09/25 17:21:24 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:21:25 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:21:25 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:21:25 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:21:25 finish push project: Public-own-email, start execute command
+2017/09/25 17:21:25 finish execute command after push on server: localhost
+2017/09/25 17:21:25 all servers command executed
+2017/09/25 17:21:25 deploy finished, enjoy :)
+2017/09/25 17:22:01 http server started
+2017/09/25 17:22:01 syncer started
+2017/09/25 17:23:44 http server started
+2017/09/25 17:23:44 syncer started
+2017/09/25 17:23:52 start sync project: Public-own-email
+2017/09/25 17:23:52 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:23:52 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:23:52 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:23:52 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:24:03 execute command before push failed: Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Nothing to install or update
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postInstall
+> php artisan optimize
+chmod: cannot access `/storage': No such file or directory
+
+2017/09/25 17:24:03 some error occured, pause deploy
+2017/09/25 17:24:34 http server started
+2017/09/25 17:24:34 syncer started
+2017/09/25 17:24:40 start sync project: Public-own-email
+2017/09/25 17:24:40 Public-own-email latest deploy failed, remove all the codes.
+2017/09/25 17:24:40 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:24:40 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:24:40 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:24:40 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:24:52 finish execute command before push
+2017/09/25 17:24:52 finish sync project: Public-own-email, start push
+2017/09/25 17:24:52 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:24:52 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:24:52 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:24:52 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:24:52 finish push project: Public-own-email, start execute command
+2017/09/25 17:24:52 finish execute command after push on server: localhost
+2017/09/25 17:24:52 all servers command executed
+2017/09/25 17:24:52 deploy finished, enjoy :)
+2017/09/25 17:27:41 http server started
+2017/09/25 17:27:41 syncer started
+2017/09/25 17:27:52 start sync project: Public-own-email
+2017/09/25 17:27:52 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:27:52 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/25 17:27:52 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:27:52 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:27:59 finish execute command before push
+2017/09/25 17:27:59 finish sync project: Public-own-email, start push
+2017/09/25 17:27:59 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:28:00 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:28:00 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:28:00 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:28:00 finish push project: Public-own-email, start execute command
+2017/09/25 17:28:00 finish execute command after push on server: localhost
+2017/09/25 17:28:00 all servers command executed
+2017/09/25 17:28:00 deploy finished, enjoy :)
+2017/09/25 17:28:52 start sync project: Public-own-email
+2017/09/25 17:28:52 start checkout to 8413b6a in /opt/repos/qa/laravel_email
+2017/09/25 17:28:52 finish checkout to 8413b6a in /opt/repos/qa/laravel_email
+2017/09/25 17:28:52 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:28:52 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:29:03 finish execute command before push
+2017/09/25 17:29:03 finish sync project: Public-own-email, start push
+2017/09/25 17:29:03 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:04 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:04 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:29:04 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:04 finish push project: Public-own-email, start execute command
+2017/09/25 17:29:04 finish execute command after push on server: localhost
+2017/09/25 17:29:04 all servers command executed
+2017/09/25 17:29:04 deploy finished, enjoy :)
+2017/09/25 17:29:40 start sync project: Public-own-email
+2017/09/25 17:29:40 start checkout to edcb9e5 in /opt/repos/qa/laravel_email
+2017/09/25 17:29:40 finish checkout to edcb9e5 in /opt/repos/qa/laravel_email
+2017/09/25 17:29:40 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:29:40 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:29:50 finish execute command before push
+2017/09/25 17:29:50 finish sync project: Public-own-email, start push
+2017/09/25 17:29:50 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:51 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:51 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:29:51 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:29:51 finish push project: Public-own-email, start execute command
+2017/09/25 17:29:51 finish execute command after push on server: localhost
+2017/09/25 17:29:51 all servers command executed
+2017/09/25 17:29:51 deploy finished, enjoy :)
+2017/09/25 17:32:04 http server started
+2017/09/25 17:32:04 syncer started
+2017/09/25 17:33:13 http server started
+2017/09/25 17:33:13 syncer started
+2017/09/25 17:38:26 http server started
+2017/09/25 17:38:26 syncer started
+2017/09/25 17:38:38 start sync project: Public-own-email
+2017/09/25 17:38:38 start checkout to edcb9e5 in /opt/repos/qa/laravel_email
+2017/09/25 17:38:38 finish checkout to edcb9e5 in /opt/repos/qa/laravel_email
+2017/09/25 17:38:38 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:38:38 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:38:49 finish execute command before push
+2017/09/25 17:38:49 finish sync project: Public-own-email, start push
+2017/09/25 17:38:49 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:38:49 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:38:49 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:38:49 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:38:49 finish push project: Public-own-email, start execute command
+2017/09/25 17:38:49 finish execute command after push on server: localhost
+2017/09/25 17:38:49 all servers command executed
+2017/09/25 17:38:49 deploy finished, enjoy :)
+2017/09/25 17:39:57 start sync project: Public-own-email
+2017/09/25 17:39:57 start checkout to 2fae6b8 in /opt/repos/qa/laravel_email
+2017/09/25 17:39:57 finish checkout to 2fae6b8 in /opt/repos/qa/laravel_email
+2017/09/25 17:39:57 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:39:57 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:40:08 finish execute command before push
+2017/09/25 17:40:08 finish sync project: Public-own-email, start push
+2017/09/25 17:40:08 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:08 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:08 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:40:08 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:08 finish push project: Public-own-email, start execute command
+2017/09/25 17:40:08 finish execute command after push on server: localhost
+2017/09/25 17:40:08 all servers command executed
+2017/09/25 17:40:08 deploy finished, enjoy :)
+2017/09/25 17:40:25 start sync project: Public-own-email
+2017/09/25 17:40:25 start checkout to 8413b6a in /opt/repos/qa/laravel_email
+2017/09/25 17:40:25 finish checkout to 8413b6a in /opt/repos/qa/laravel_email
+2017/09/25 17:40:25 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:40:25 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/25 17:40:35 finish execute command before push
+2017/09/25 17:40:35 finish sync project: Public-own-email, start push
+2017/09/25 17:40:35 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:36 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:36 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/25 17:40:36 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/25 17:40:36 finish push project: Public-own-email, start execute command
+2017/09/25 17:40:36 finish execute command after push on server: localhost
+2017/09/25 17:40:36 all servers command executed
+2017/09/25 17:40:36 deploy finished, enjoy :)
+2017/09/25 17:48:43 http server started
+2017/09/25 17:48:43 syncer started
+2017/09/26 09:18:37 http server started
+2017/09/26 09:18:37 syncer started
+2017/09/26 09:19:16 start sync project: Public-own-email
+2017/09/26 09:19:16 start checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/26 09:19:16 finish checkout to f284f91 in /opt/repos/qa/laravel_email
+2017/09/26 09:19:16 start rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 09:19:16 finish rsync from /opt/repos/qa/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 09:19:29 finish execute command before push
+2017/09/26 09:19:29 finish sync project: Public-own-email, start push
+2017/09/26 09:19:29 start rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/26 09:19:30 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /opt/app/nginx/html/qa1/laravel_email
+2017/09/26 09:19:30 start fix deploy /opt/app/nginx/html/qa1/laravel_email permission
+2017/09/26 09:19:30 finish fix permission /opt/app/nginx/html/qa1/laravel_email
+2017/09/26 09:19:30 finish push project: Public-own-email, start execute command
+2017/09/26 09:19:30 finish execute command after push on server: localhost
+2017/09/26 09:19:30 all servers command executed
+2017/09/26 09:19:30 deploy finished, enjoy :)
+2017/09/26 09:38:02 http server started
+2017/09/26 09:40:25 http server started
+2017/09/26 09:40:25 syncer started
+2017/09/26 09:40:38 start sync project: Public-own-email
+2017/09/26 09:40:38 start checkout to edcb9e5 in /tmp/deployment/repos/laravel_email
+2017/09/26 09:40:38 finish checkout to edcb9e5 in /tmp/deployment/repos/laravel_email
+2017/09/26 09:40:38 start rsync from /tmp/deployment/repos/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 09:40:38 finish rsync from /tmp/deployment/repos/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 09:40:48 finish execute command before push
+2017/09/26 09:40:48 finish sync project: Public-own-email, start push
+2017/09/26 09:40:48 start rsync from /tmp/deployment-Public-own-email-yiimodel to /tmp/deployment/webroot/laravel_email
+2017/09/26 09:40:53 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /tmp/deployment/webroot/laravel_email
+2017/09/26 09:40:53 start fix deploy /tmp/deployment/webroot/laravel_email permission
+2017/09/26 09:40:53 finish fix permission /tmp/deployment/webroot/laravel_email
+2017/09/26 09:40:53 finish push project: Public-own-email, start execute command
+2017/09/26 09:40:53 finish execute command after push on server: localhost
+2017/09/26 09:40:53 all servers command executed
+2017/09/26 09:40:53 deploy finished, enjoy :)
+2017/09/26 10:11:45 start sync project: Public-own-email
+2017/09/26 10:11:45 start checkout to 8413b6a in /tmp/deployment/repos/laravel_email
+2017/09/26 10:11:45 finish checkout to 8413b6a in /tmp/deployment/repos/laravel_email
+2017/09/26 10:11:45 start rsync from /tmp/deployment/repos/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 10:11:45 finish rsync from /tmp/deployment/repos/laravel_email to /tmp/deployment-Public-own-email-yiimodel
+2017/09/26 10:11:52 finish execute command before push
+2017/09/26 10:11:52 finish sync project: Public-own-email, start push
+2017/09/26 10:11:52 start rsync from /tmp/deployment-Public-own-email-yiimodel to /tmp/deployment/webroot/laravel_email
+2017/09/26 10:11:52 finish rsync from /tmp/deployment-Public-own-email-yiimodel to /tmp/deployment/webroot/laravel_email
+2017/09/26 10:11:52 start fix deploy /tmp/deployment/webroot/laravel_email permission
+2017/09/26 10:11:52 finish fix permission /tmp/deployment/webroot/laravel_email
+2017/09/26 10:11:52 finish push project: Public-own-email, start execute command
+2017/09/26 10:11:52 finish execute command after push on server: localhost
+2017/09/26 10:11:52 all servers command executed
+2017/09/26 10:11:52 deploy finished, enjoy :)
+2017/09/26 10:36:07 http server started
+2017/09/26 10:36:07 syncer started
